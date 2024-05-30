@@ -1,0 +1,59 @@
+
+/* Global */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $color-light;
+  font-family: $font-main;
+  line-height: 1.7;
+  font-weight: $font-normal;
+
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.page {
+  padding: 5px;
+}
+
+
+.footer {
+  font-size: 10px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+// Media query
+
+@media (width <= 575px) {
+  .title {
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+  }
+    
+  .title::after {
+    width: 250px;
+  }
+}
+
+@media (width >= 576px) and (width <= 768px) {
+  .title {
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+  }
+    
+  .title::after {
+    width: 250px;
+  }
+}

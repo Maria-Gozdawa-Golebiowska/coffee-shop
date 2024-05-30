@@ -1,0 +1,119 @@
+#pages {
+    > * {
+      display: none;
+    }
+    
+    > .active {
+      display: block;
+    }
+  }
+  
+  .title {
+    font-size: 30px;
+    margin-top: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-middle;
+    letter-spacing: 5px;
+    font-weight: 200;
+  }
+
+  .title ::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    margin-top: 80px;
+    width: 400px;
+    height: 4px;
+    transform: translateX(-50%);
+    background: $color-middle;
+  }
+
+
+  .products {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .products:nth-child(even){
+    .row{
+      flex-direction: row-reverse;
+    }
+  }
+  
+  .product-content {
+    border-color: #fff;
+    height: 300px;
+    position: relative;
+  
+    .product__name {
+      font-size: 30px;
+      font-weight: $font-bold;
+      letter-spacing: 1px;
+    }
+  
+    .product__name::after {
+      position: absolute;
+      content: '';
+      top: 90px;
+      left: 42px;
+      width: 75px;
+      height: 3px;
+      transform: translateX(-50%);
+      background: $color-middle;
+    }
+  
+    .product__description {
+      font-size: 10px;
+      font-weight: $font-semibold;
+      max-width: 220px;
+      position: absolute;
+      top: 72px;
+      left: 100px;
+    }
+  
+    .details {
+      line-height: 0.5;
+      font-size: 13px;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      position: absolute;
+      top: 160px;
+      left: 5px;
+  
+      .score {
+        color: $color-middle;
+      }
+    }
+  }
+  
+  .product-image {
+    box-sizing: border-box;
+    box-shadow: black;
+  }
+  
+  // Media query
+  
+  @media (width >= 576px) and (width <= 768px) {
+    .product-content {
+      height: 200px;
+  
+      .product__name {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 25px;
+      }
+  
+      .product__name::after {
+        top: 50px;
+      }
+  
+      .product__description {
+        top: 35px;
+      }
+  
+      .details {
+        top: 130px;
+      }
+    }
+  }

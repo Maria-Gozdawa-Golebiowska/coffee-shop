@@ -1,0 +1,15 @@
+@mixin reset-text {
+  font-family: $font-family-base; // Poprawione
+  font-weight: $font-weight-normal; // Dodano brakujący dwukropek i średnik
+  line-height: $line-height-base; // Dodano brakujący średnik
+  text-align: left; // Fallback for where `start` is not supported
+  text-align: start; // Usunięto niepoprawne komentarze i poprawiono składnię
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+}
