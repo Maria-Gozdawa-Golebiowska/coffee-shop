@@ -40,7 +40,6 @@ $utilities: map-merge(
     ),
     // scss-docs-end utils-display
     // scss-docs-start utils-shadow
-    /* stylelint-disable declaration-colon-space-after, declaration-block-semicolon-newline-after */
     "shadow": (
       property: box-shadow,
       class: shadow,
@@ -51,7 +50,6 @@ $utilities: map-merge(
         none: none,
       )
     ),
-    /* stylelint-disable declaration-colon-space-after, declaration-block-semicolon-newline-after */
     // scss-docs-end utils-shadow
     // scss-docs-start utils-position
     "position": (

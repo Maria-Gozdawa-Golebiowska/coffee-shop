@@ -1,6 +1,4 @@
 
-/* Global */
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -27,12 +25,11 @@ body {
 
 
 .footer {
-  font-size: 10px;
+  font-size: 11px;
   text-align: center;
   margin: 15px 0;
 }
 
-// Media query
 
 @media (width <= 575px) {
   .title {

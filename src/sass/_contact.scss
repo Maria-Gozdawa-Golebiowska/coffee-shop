@@ -1,0 +1,31 @@
+
+.contact-form {
+    color: $color-dark;
+    letter-spacing: 2px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: space-between;
+    height: 450px;
+    width: 300px;
+    margin: auto;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+  
+    input, textarea {
+      border: 1px solid black;
+      line-height: 3;
+    }
+  
+    .submit {
+      background-color: $color-middle;
+      color: $color-light;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      height: 50px;
+      width: 110px;
+      margin: 40px auto;
+      border: none;
+    }
+  }
