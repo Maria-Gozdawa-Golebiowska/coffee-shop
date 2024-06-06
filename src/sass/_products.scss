@@ -42,10 +42,9 @@
       padding-left: 30px;
     }
   
-     .product-content {
-      left: 60%;
-      flex-wrap: wrap;
-      
+     .product-content {  
+      left: 200px;
+  
     }
   }
   
@@ -53,6 +52,7 @@
     height: 300px;
     position: relative;
     left: 30px;
+  
   
     .product__name {
       font-size: 30px;
@@ -99,12 +99,44 @@
   .product-image {
     box-sizing: border-box;
     box-shadow: black;
+    max-width: 100%;
   }
   
+  @media (max-width: 575px) {
+    .card.product-image {
+      padding: 10px; 
+    }
+    
+    .card.product-image img {
+      width: 100%; 
+      height: auto;
+      max-width: 100%;
+    }
 
+    .products:nth-child(even) {
+      .row {
+        flex-direction: row-reverse;
+        padding-left: 30px;
+      }
+    
+       .product-content {  
+        left: 0;
+    
+      }
+    }
+  }
   
+  @media (min-width: 576px) and (max-width: 768px) {
+  
+    .product-content {
+      width: auto; 
+      text-align: left; 
+      margin-left: 0;
+      margin-right: 20px; 
+    }
+  }
   @media (width >= 576px) and (width <= 768px) {
-   
+ 
     .product-content {
       height: 200px;
   
@@ -128,9 +160,38 @@
        .product-content {
         margin: 0 auto;
         flex-wrap: wrap;
-        
+      }
+      .product-image{
+        max-width: 250px;
+        max-height: 200px;
       }
     }
   }
     
+  @media (max-width: 1024px){
+    .product-content {
+      text-align: left; /* Tekst wyrównany do lewej */
+      margin-left: 0;
+      margin-right: 20px; /* Odstęp po prawej stronie */
+    }
+  
+    .card.product-image {
+      flex: 0 0 50%; /* Stała szerokość obrazu */
+    }
+  
+    .card.product-image img {
+      max-width: 100%; /* Zapewnia, że obraz zajmuje maksymalną szerokość kontenera */
+      height: auto; /* Wysokość dostosowuje się proporcjonalnie */
+    }
+    .products:nth-child(even) {
+      .row {
+        flex-direction: row-reverse;
+        padding-left: 30px;
+      }
+    
+       .product-content {  
+        left: 0;
+       }
+  }
+}
   
